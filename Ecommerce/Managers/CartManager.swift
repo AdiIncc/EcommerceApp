@@ -49,4 +49,8 @@ class CartManager {
         }
     }
     
+    func pay() {
+        
+    }
+    
 }
