@@ -38,6 +38,18 @@ struct CartView: View {
                     CartRow(productInCart: productInCart)
                 }
             }
+            VStack {
+                Divider()
+                HStack {
+                    Text("Total: \(cartManager.displayTotalCartQuantity) items")
+                        .font(.system(size: 16))
+                    Spacer()
+                    Text("\(cartManager.displayTotalCartPrice)")
+                        .font(.system(size: 16,weight: .bold))
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 30)
+            }
         }
     }
 }
